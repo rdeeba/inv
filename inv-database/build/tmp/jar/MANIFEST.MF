@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: jul-to-slf4j-1.7.25.jar slf4j-api-1.7.25.jar
+Main-Class: com.deeba.database.Main
+

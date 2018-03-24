@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database.iml" filepath="$PROJECT_DIR$/.idea/modules/database.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database_main.iml" filepath="$PROJECT_DIR$/.idea/modules/database_main.iml" group="database" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database_test.iml" filepath="$PROJECT_DIR$/.idea/modules/database_test.iml" group="database" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv.iml" filepath="$PROJECT_DIR$/.idea/modules/inv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv-database.iml" filepath="$PROJECT_DIR$/.idea/modules/inv-database.iml" group="inv-database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv-database/inv-database_main.iml" filepath="$PROJECT_DIR$/.idea/modules/inv-database/inv-database_main.iml" group="inv-database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv-database/inv-database_test.iml" filepath="$PROJECT_DIR$/.idea/modules/inv-database/inv-database_test.iml" group="inv-database" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv_main.iml" filepath="$PROJECT_DIR$/.idea/modules/inv_main.iml" group="inv" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/inv_test.iml" filepath="$PROJECT_DIR$/.idea/modules/inv_test.iml" group="inv" />
     </modules>
