@@ -11,5 +11,5 @@ RUN apt-get -q update &&\
 USER $NB_UID
 
 VOLUME /tmp
-COPY deeba-hello-0.1.0.jar app.jar
+COPY build/libs/deeba-hello-0.1.0.jar app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]

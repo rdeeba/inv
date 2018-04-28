@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    deeba-hello:
+        image: localhost:5000/first-image
+        ports:
+            - "5555:8081"
+        deploy:
+           replicas: 1
+        networks:
+            - default
+
+networks:
+  default:
+     driver: overlay

@@ -1,7 +1,19 @@
 group 'com.deeba'
 version '1.0-SNAPSHOT'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.1.RELEASE")
+        classpath('gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.13.0')
+    }
+}
+
 apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.8
 
@@ -10,5 +22,11 @@ repositories {
 }
 
 dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE"
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+bootJar {
+    baseName = 'deeba-hello'
+    version = '0.1.0'
 }
