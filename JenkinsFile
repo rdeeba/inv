@@ -1,16 +1,16 @@
 node("master") {
     stage('Checkout') {
       // Everything in this scope is part of the checkout stage
-      if(!fileExists(file: "calclayer-${env.BRANCH_NAME}")) {
-        sh "git clone ssh://git@stash.murex.com:7999/blend/calclayer.git calclayer-${env.BRANCH_NAME}"
+      if(!fileExists(file: "deeba-master")) {
+        sh "git clone https://github.com/rdeeba/inv.git"
       }
       dirWrapper {
         // Get all changes
         sh "git fetch --all"
         // Check out the correct branch
-        sh "git checkout ${env.BRANCH_NAME}"
+        sh "git checkout master"
         // Overwrite local history with origin/${env.BRANCH_NAME}
-        sh "git reset --hard origin/${env.BRANCH_NAME}"
+        sh "git reset --hard origin/master"
       }
     }
 }
