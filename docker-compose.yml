@@ -10,6 +10,17 @@ services:
         networks:
             - default
 
+    elk:
+        image: sebp/elk
+        ports:
+          - "5601:5601"
+          - "9200:9200"
+          - "5044:5044"
+        deploy:
+           replicas: 1
+        networks:
+            - default
+
 networks:
   default:
      driver: overlay
